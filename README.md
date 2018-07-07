@@ -15,5 +15,15 @@ if the user guessed the correct letters completing the word the a win in tallied
 ## Installation
 - open the HTML file provided
 
+## Screenshots
+### Landing Page:
+![](./screenshots/hangmanLanding.JPG)
+### Guessing Letters:
+![](./screenshots/guessletters.JPG)
+### Win Game:
+![](./screenshots/win.JPG)
+### Lose Game:
+![](./screenshots/loss.JPG)
+
 ## Author
 Michael Emmons
