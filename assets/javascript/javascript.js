@@ -53,6 +53,8 @@
             $(".loss-number").html(loss);
             $(".HMpic").html()
 
+            digitalKeyboard()
+
             // this will select a random word from the words array and store it as wordSelected and then push the word
             //  to the wordSelect array
             var wordSelected = words[Math.floor(Math.random() * words.length)];
@@ -67,6 +69,35 @@
 
             addDashes();
         }
+         function digitalKeyboard(){
+            var alphabet=["Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"]
+
+            for(var i =0; i<alphabet.length;i++){
+                var contain= $("<button>");
+                    contain.addClass("letterContain");
+                    contain.text(alphabet[i]);
+                    contain.attr("data-letter", alphabet[i]);
+
+                   
+
+                    (i == 9? addBreak(contain): i== 18?addBreak(contain):$(".keyboard").append(contain))
+
+                    
+            }
+
+            function addBreak(letter){
+                 var breaks= $("<br>")
+               
+                $(".keyboard").append(letter).append(breaks)
+            }
+        
+        
+        }
+
+        $(".letterContain").on("click",function(){
+            var letter = $(this).data("letter");
+            runnn(letter,"digitalKey")
+        })
 
 
         function addDashes() {
@@ -117,10 +148,20 @@
         // this is an event that is triggered when the user selects a letter on the keyboard.
         // it first clears the letterInstances array and stores the letter pressed as a variable ltr
         document.onkeyup = function(event) {
+
+            runnn(event,"keyboard")
+        }
+
+        function runnn(event,type){
+             var letterInstances = [];
+            if(type == "keyboard"){
             event.preventDefault();
-            var letterInstances = [];
-            var ltr = String.fromCharCode(event.keyCode).toLowerCase();
            
+            var ltr = String.fromCharCode(event.keyCode).toLowerCase();
+        }else if(type=="digitalKey"){
+            var ltr = event.toLowerCase()
+
+        }           
 
 
 
@@ -279,3 +320,6 @@
 
               })
         }
+
+
+       

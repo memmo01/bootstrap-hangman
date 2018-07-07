@@ -38,3 +38,14 @@
 .instruction{
     text-align: center;
 }
+.keyboard{
+    text-align:center;
+    padding:60px;
+    visibility:;
+}
+.letterContain{
+    margin:3px;
+    padding:25px;
+    font-size: 25px;
+}
+
