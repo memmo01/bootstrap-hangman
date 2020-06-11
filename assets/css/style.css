@@ -36,12 +36,12 @@ body {
 }
 .keyboard {
   text-align: center;
-  padding: 60px;
+  padding: 30px 0px 80px 0px;
   display: block;
 }
 .letterContain {
   margin: 3px;
-  padding: 30px;
+  width: 30px;
   font-size: 25px;
   display: inline-block;
   background-color: white;
