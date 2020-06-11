@@ -57,6 +57,7 @@ function run() {
   addDashes();
 }
 function digitalKeyboard() {
+  $(".keyboard").empty();
   var alphabet = [
     "Q",
     "W",
