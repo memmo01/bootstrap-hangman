@@ -37,7 +37,6 @@ body {
 .keyboard {
   text-align: center;
   padding: 60px;
-  visibility: ;
 }
 .letterContain {
   margin: 3px;
@@ -45,4 +44,9 @@ body {
   font-size: 25px;
   display: inline-block;
   background-color: white;
+}
+@media (min-width: 778px) {
+  .keyboard {
+    display: none;
+  }
 }

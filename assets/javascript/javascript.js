@@ -85,7 +85,7 @@ function digitalKeyboard() {
     "N",
     "M",
   ];
-  $(".keyboard").empty();
+
   for (var i = 0; i < alphabet.length; i++) {
     var contain = $("<div>");
     contain.addClass("letterContain");
