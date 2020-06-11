@@ -1,51 +1,48 @@
-    body{
-        background-color:#F7AD0A;
-    }
-.left-panel{
-    background-image:url("../images/dumble.jpg");
-    background-position: right;
-    
+body {
+  background-color: #f7ad0a;
 }
-.right-panel{
-    background-image:url("../images/vold.jpg");
-    background-position: left;
-    
+.left-panel {
+  background-image: url("../images/dumble.jpg");
+  background-position: right;
 }
-.title{
-    text-align: center;
-    
+.right-panel {
+  background-image: url("../images/vold.jpg");
+  background-position: left;
+}
+.title {
+  text-align: center;
 }
 
-
-.middle-area{
-    margin:20px 0 20px 0;
+.middle-area {
+  margin: 20px 0 20px 0;
 }
-.hangman{
-    text-align: center;
-    margin:10px 0 60px 0;
+.hangman {
+  text-align: center;
+  margin: 10px 0 60px 0;
 }
-.incorrect-sect{
-    margin-bottom:60px;
+.incorrect-sect {
+  margin-bottom: 60px;
 }
-.wrongL{
-    height:20px;
+.wrongL {
+  height: 20px;
 }
-.lead{
-    font-weight:700;
-    font-size:25px;
-}
-
-.instruction{
-    text-align: center;
-}
-.keyboard{
-    text-align:center;
-    padding:60px;
-    visibility:;
-}
-.letterContain{
-    margin:3px;
-    padding:25px;
-    font-size: 25px;
+.lead {
+  font-weight: 700;
+  font-size: 25px;
 }
 
+.instruction {
+  text-align: center;
+}
+.keyboard {
+  text-align: center;
+  padding: 60px;
+  visibility: ;
+}
+.letterContain {
+  margin: 3px;
+  padding: 30px;
+  font-size: 25px;
+  display: inline-block;
+  background-color: white;
+}
