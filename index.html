@@ -1,99 +1,97 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" href="./assets/css/style.css">
-   </head>
-   <body>
-      
-         <div class="row">
-            <div class="col-lg-3 left-panel">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-lg-3 left-panel"></div>
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-3 bg-dark text-white title">
+            <h2 class="card-title">Wins</h2>
+            <div class="row">
+              <div class="col"></div>
+              <h1 class="display-4">
+                <div class="col-lg win-number"></div>
+              </h1>
+              <div class="col"></div>
             </div>
-            <div class="col-lg-6">
-               <div class="row">
-                  <div class="col-lg-3 bg-dark text-white title">
-                     <h2 class="card-title">Wins</h2>
-                     <div class="row">
-                        <div class="col">
-                        </div>
-                        <h1 class="display-4">
-                           <div class="col-lg win-number">
-                           </div>
-                        </h1>
-                        <div class="col">
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-6 bg-warning title">
-                     <h1 class="display-4">Harry Potter Hangman</h1>
-                  </div>
-                  <div class="col-lg-3 bg-dark text-white title ">
-                     <h2 class="card-title">Losses</h2>
-                     <div class="row">
-                        <div class="col">
-                        </div>
-                        <h1 class="display-4">
-                           <div class="col-lg loss-number">
-                           </div>
-                        </h1>
-                        <div class="col">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row bg-secondary">
-                  <div class="col-lg-12 middle-area">
-                     <li class="list-group-item active instruction"> Selected a letter and begin guessing the word. Careful, you can only guess incorrectly 6 times</li>
-                  </div>
-               </div>
-               <div class="row bg-secondary">
-                  <div class="col-lg-12 middle-area">
-                     <div class="jumbotron">
-                        <div class="row">
-                           <div class="col">
-                           </div>
-                           <h1 class="display-4">
-                              <div class="col-lg hangman">
-                              </div>
-                           </h1>
-                           <div class="col">
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="col">
-                           </div>
-                           <h2 class="lead">
-                              <div class="col-lg incorrect-sect">
-                                 incorrect letters:
-                              </div>
-                           </h2>
-                           <div class="col">
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="col">
-                           </div>
-                           <h1 class="lead">
-                              <div class="col-lg wrongL">
-                              </div>
-                           </h1>
-                           <div class="col">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+          </div>
+          <div class="col-lg-6 bg-warning title">
+            <h1 class="display-4">Harry Potter Hangman</h1>
+          </div>
+          <div class="col-lg-3 bg-dark text-white title">
+            <h2 class="card-title">Losses</h2>
+            <div class="row">
+              <div class="col"></div>
+              <h1 class="display-4">
+                <div class="col-lg loss-number"></div>
+              </h1>
+              <div class="col"></div>
             </div>
-            <div class="col-lg-3 right-panel">
+          </div>
+        </div>
+        <div class="row bg-secondary">
+          <div class="col-lg-12 middle-area">
+            <li class="list-group-item active instruction">
+              Selected a letter and begin guessing the word. Careful, you can
+              only guess incorrectly 6 times
+            </li>
+          </div>
+        </div>
+        <div class="row bg-secondary">
+          <div class="col-lg-12 middle-area">
+            <div class="jumbotron">
+              <div class="row">
+                <div class="col"></div>
+                <h1 class="display-4">
+                  <div class="col-lg hangman"></div>
+                </h1>
+                <div class="col"></div>
+              </div>
+              <div class="row">
+                <div class="col"></div>
+                <h2 class="lead">
+                  <div class="col-lg incorrect-sect">
+                    incorrect letters:
+                  </div>
+                </h2>
+                <div class="col"></div>
+              </div>
+              <div class="row">
+                <div class="col"></div>
+                <h1 class="lead">
+                  <div class="col-lg wrongL"></div>
+                </h1>
+                <div class="col"></div>
+              </div>
             </div>
-         </div>
-      <div class="keyboard">
-     
+          </div>
+        </div>
       </div>
-         <nav class="navbar fixed-bottom navbar-dark bg-dark l">
-            <a class="navbar-brand text-warning" href="#">Lemmons Creative</a>
-         </nav>
-      <script type="text/javascript" src="./assets/javascript/javascript.js"></script>
-   </body>
+      <div class="col-lg-3 right-panel"></div>
+    </div>
+    <div class="keyboard"></div>
+    <nav class="navbar fixed-bottom navbar-dark bg-dark l">
+      <a class="navbar-brand text-warning" href="#">Lemmons Creative</a>
+    </nav>
+    <script
+      type="text/javascript"
+      src="./assets/javascript/javascript.js"
+    ></script>
+  </body>
 </html>
